@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="seminarmenu.css">
+	<link rel="stylesheet" href="competitionmenu.css">
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="uikit.css">
+	<link rel="stylesheet" href="owl.carousel.min.css">
+	<link rel="stylesheet" href="sejarah-techpo.css">
+	<link rel="stylesheet" href="owlnav.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<script src="uikit.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+  	<style>
+  		html{
+  			background-color: black;
+  		}
+  	</style>
+</head>
+<body>
+	<div style="width: 100vw">
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+					<nav class="uk-navbar-container" style="position: relative; z-index: 99;font-weight: 700; background-color: black" uk-navbar>
+					    <div class="uk-navbar-center">
+
+					        <div class="uk-navbar-center-left"><div>
+					            <ul class="uk-navbar-nav">
+					                <li class=""><a href="#">Beranda</a></li>
+					                <li class="disnone"><a href="#">Login</a></li>
+					            </ul>
+					        </div></div>
+					        <a class="uk-navbar-item uk-logo" href="#"><img src="icontechpo.png" style="height: 30px;width: 30px;" alt=""></a>
+					        <div class="uk-navbar-center-right"><div>
+					            <ul class="uk-navbar-nav">
+					                <li>
+					                    <a href="#">Kompetisi</a>
+					                    <div class="uk-navbar-dropdown">
+					                        <ul class="uk-nav uk-navbar-dropdown-nav">
+					                            <li ><a href="#">Competitive Programming</a></li>
+					                            <li><a href="#">Bussines IT Case</a></li>
+					                            <li><a href="#">Software Development</a></li>
+					                            <li><a href="#">Network Competition</a></li>
+					                            <li><a href="#">UI/UX Design</a></li>
+					                        </ul>
+					                    </div>
+					                </li>
+					                <li class="disnone"><a href="#">Seminar</a></li>
+					            </ul>
+					        </div></div>
+
+					    </div>
+					</nav>
+					</div>
+	</div>
+	<div id="overlay-fixed">	
+	</div>
+	<img src="bg-robot-pedang.png" style="position: fixed; top: 180px; height: 100vh; width: 100vw; z-index: 12;background-color: black;" id="bg1-anim" alt="">
+	<img src="" style="position: fixed;height: 100vh; width: 100vw; z-index: 11;background-color: black;" id="bg1-anim" alt="">
+	<img src="bg2.jpg" style="position: fixed; height: 100vh; width: 100vw; z-index: 10" id="bg3-anim" alt="">
+	<div style="position: relative;z-index: 30;">
+		<div class="page-padding">
+			<div class="bg-transparent-full"  id="header-comp" style="height: 200px">
+				<div class="page-margin">
+					<div class="Mediumrob" style="padding-top: 180px;line-height: 1.4; font-weight: 500">
+						Software Development		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seminar-content2">
+			<div class="page-margin">
+				<div class="content2-box">
+					<div class="uk-grid-large uk-child-width-expand@s" uk-grid>
+					    <div>
+					        <div class="content2-text-box-title">
+								<div>SoftDev</div>
+								<div style="margin-top: 10px;">merupakan</div>
+							</div>
+					    </div>
+					    <div>
+					       <div class="content2-text-box-text">
+								<div>
+									Kompetisi tingkat nasional yang diselenggarakan untuk menguji kemampuan berinovasi peserta dalam memberikan solusi dari suatu permasalahan dengan membuatan disertai dengan mengembangkan suatu perangkat lunak.
+								</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			<div class="bg-transparent-full" id="daftar-trigger" style="height: 80vh; background-color: rgba(0,0,0,0.8);">
+				<div class="page-margin20" id="daftar-margin" style="padding-top: 150px">
+					<div class="uk-grid-large uk-child-width-expand@s" style="opacity:0; transform: translateY(100px);" id="anim-daftar" uk-grid>
+					    <div>
+					        <div class="Smallrob" style="margin-bottom: 10px; font-weight: 500;">
+								<span class="underline">Techphoria 2019</span>
+							</div>
+							<div class="Mediumrob" style="line-height: 1.4; font-weight: 400">
+								Daftarkan timmu sekarang juga
+							</div>
+					    </div>
+					    <div>
+					       <button class="comp-button" style="margin-top: 50px; padding-top: 25px; padding-bottom: 25px; padding-left: 20px; padding-right: 20px; float: right">Daftar Kompetisi</button>
+					    </div>
+					</div>
+				</div>
+					
+			</div>
+			<div class="home-intro" id="info-lomba" style="height: 1200px">
+				<div class="page-margin" >
+					<div class="uk-grid-large" uk-grid>
+					    <div class="uk-width-1-3@m">
+					        <div id="sticky-slider-box">
+						    	<h1 id="sticky-content">	
+									<span class="home-line" id="info-title">Informasi lomba</span>
+
+									<button class="comp-button" style=" padding-top: 25px; padding-bottom: 25px; padding-left: 20px; padding-right: 20px; display: block; margin-top: 25px;">Download Rulebook</button>
+								</h1>
+							</div>
+					    </div>
+					    <div class="uk-width-expand@m">
+					       <div class="home-step-box">
+					        	<div class="home-step-line">
+									<div class="step-text">
+										Seluruh peserta diwajibkan membaca rulebook sebelum melakukan pendafataran
+									</div>					        		
+					        	</div>
+					        	<div class="home-step-line" id="bg3-trigger">
+									<div class="step-text">
+										Peserta mendaftarkan timnya pada laman pendaftaran Software Development
+									</div>					        		
+					        	</div>
+					        	<div class="home-step-line">
+					        		<div class="step-text">
+										Bila tim sudah menyelesaikan proses pembayaran dan pendaftaran setiap tim harus mengirimkan proposal pada laman perlombaan Software Development, bisa diakses melalui laman user
+									</div>
+					        	</div>
+					        	<div class="home-step-line">
+					        		<div class="step-text">
+										Tim yang lolos penyeleksian tahap awal akan dikonfirmasi pada laman email dan diharapkan mengikuti arahan dari Tim penyeleksi Software Development
+									</div>
+					        	</div>
+					        	<div class="home-step-line">
+					        		<div class="step-text">
+										Tim akan melaksanakan penyeleksian tahap lanjut dan tim yang dipilih akan diproses menuju final di gedung perlombaan Techphria 2019
+									</div>
+					        	</div>
+					        	<div class="home-step-line">
+					        		<div class="step-text">
+					        			Babak final tim akan langsung mempresentasikan proposal miliknya langsung dihadapan juri dan juga seluruh peserta dan tim terbaik akan menjadi juaranya
+									</div>
+					        	</div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="page-margin">
+				<div class="uk-grid-collapse" uk-grid>
+				<div class="uk-width-1-2@m">
+					<div class="uk-grid-collapse" style="padding-top: 100px;" id="timeline-grid" uk-grid>
+						<div class="uk-width-1-5">
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									15 Juni - 23 Agustus
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									24 Agustus
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									25 Agustus
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									1 September
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									9 Oktober
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									12 Oktober
+								</div>
+							</div>		
+						</div>
+						<div class="uk-width-1-6" id="barmid">
+							<div style="height: 700px;border-radius: 30px;border:solid 2px white; width: 30px;">
+								<div style="height: 100px; margin: 5px; border-radius: 30px;background-color: white" id="scroll-animku">
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="uk-width-1-5">
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Pendaftaran Peserta
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Tahapan Pemanasan
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Tahap Penyisihan
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Pengumuman Finalis
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Final
+								</div>
+							</div>
+							<div class="timeline-box">
+								<div class="Smallrob" style="font-family: 'Amatic SC', cursive;font-weight: 300; font-size: 21px">
+									Pengumuman Pemenang
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-2@m">
+					<div class="bgku" style="background-color: black;color: white">
+				<div class="page-margin">
+					<div class="Smallmont" align="center" style="margin-bottom: 50px;">
+						Pertanyaan seputar perlombaan
+					</div>
+					<ul uk-accordion="multiple: true">
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" id="faq-title" href="#" style="color:white; font-weight: 200">Syarat dan ketentuan</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Syarat dan ketentuan umum dan khusus wajib dibaca oleh peserta pada rulebook</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Prosedur pendaftaran</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					        	<div class="faq-text">	
+									1. 
+									<span>Pendaftaran tim dilakukan oleh ketua tim dengan mendaftar pada laman Software Development. Ketua tim mengisi data kelompok dengan lengkap.</span>
+									
+					        	</div>
+					        	<div class="faq-text">	
+									2.
+									<span>Melakukan pembayaran biaya pendaftaran sebesar RP. 150.000 pada:</span>
+									<br>	
+						            <i><span style="margin-left: 30px;">Bank : </span></i><br>	
+						            <i><span style="margin-left: 30px;">No rekening :</span></i><br>	
+						            <i><span style="margin-left: 30px;">Atas nama</span></i>
+					        	</div>
+					        	<div class="faq-text">	
+					        		3.
+					        		<span>Ketua tim mengirim bukti pembayaran pada laman user dan email konfirmasi akan segera di kirim oleh panitia setelah bukti pembayaran diverifikasi</span>
+					        	</div>
+					            
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Apakah peserta harus berasal dari satu universitas ?</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Untuk perlombaan yang pesertanya harus membentuk sebuah tim maka tim yang didaftarkan harus berasal dari Universitas yang sama</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Bagaimana bila saya sudah membayar namun belum dikonfirmasi  ?</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Hubungi kontak panitia dari lomba Software Development, dan sertakan bukti pembayaran</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Bagaimana bila saya tidak mendapatkan bukti pembayaran ?</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Hubungi kontak panitia dari lomba Software Development, dan berikan informasi pengirim, dan tanggal beserta waktu transakti yang dilakukan</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Apakah penulisan bahasa termasuk kriteria penilaian ?</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Bahasa yang baik dan benar adalah hal dianjurkan oleh panitia, kriteria penilaian dilampirkan pada bagian akhir dari rulebook Software Development</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Apakah saya boleh mengikuti lebih dari satu perlombaan ?</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Peserta beserta timnya hanya diperbolehkan mengikuti satu perlombaan</p>
+					            </div>
+					        </div>
+					    </li>
+					    <li style="border-bottom: solid 1px white;padding-bottom: 15px;">
+					        <a class="uk-accordion-title" href="#" style="color:white; font-weight: 200">Informasi seputar perlombaan</a>
+					        <div class="uk-accordion-content" style="font-weight: 200; font-size: 17px; font-family: roboto,sans-serif;">
+					            <div class="faq-text">	
+									<p>Informasi dari tiap babak yang ada pada perlombaan dilampirkan pada rulebook Software Development</p>
+					            </div>
+					        </div>
+					    </li>
+					</ul>
+				</div>
+			</div>
+				</div>
+				
+			</div>
+			</div>
+			
+			
+			<div class="bg-fillwhite-full15" style="height: auto; padding-bottom: 120px;" >	
+				<div class="page-margin20" style="margin-top: 50px">
+					<div class="Smallmont">	
+						<div class="small-title-text" style="margin-left: 5%; margin-right: 10%; font-size: 26px;color: 	#7f7f7f; font-weight: 700">	
+							Dokumentasi Software Development
+						</div>
+						<div class="small-content-text15" style="margin-left: 5%; margin-right: 5%; font-size: 23px; font-weight: 400; color: black" id="bg4-trigger">
+							Setiap tahunnya kegiatan ini selalu diikuti oleh banyak perguruan tinggi negeri maupun swasta dan menjadikan perlombaan ini semakin kompetitif.
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="">
+				<div id="highlights">
+					<div class="pomar" style="margin-top: 0">
+						<div class="owl-carousel owl-theme">
+							<div class="item">	<img src="tehcpo16-1.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+							<div class="item">	<img src="tehcpo16-2.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+							<div class="item">	<img src="tehcpo16-3.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+							<div class="item">	<img src="tehcpo16-4.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+							<div class="item">	<img src="tehcpo16-5.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+							<div class="item">	<img src="tehcpo16-6.jpg" style="width: 270px" class="highlight-foto" alt=""></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		
+		<div class="bg-fillwhite-auto" style="color: white; background-color: black; padding-top: 100px;padding-bottom: 100px;">
+			<div class="page-margin">
+				<div class="uk-grid-large uk-child-width-expand@s" uk-grid>
+				    <div>
+				    	<div class="comp-slider-title">
+							<div class="comp-pslider-title-h" style="font-weight: 500; font-size: 20px; margin-bottom: 5px">
+							   Techphoria 2019
+							</div>
+							<div class="comp-pslider-title-t" style="font-weight: 200">
+								<a href="" class="alink">About Techpho</a><br>
+								<a href="" class="alink">History Techpho</a><br>	
+								<a href="" class="alink">Seminar Techpho</a>
+							</div>
+						</div>
+					</div>
+					<div>
+				        <div class="comp-pslider-title-h" style="font-weight: 500; font-size: 20px; margin-bottom: 5px">
+						   Social Media
+						</div>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-instagram"></a>
+				    </div>
+				    <div>
+				    	<div class="comp-pslider-title-h" style="font-weight: 500; font-size: 20px; margin-bottom: 5px">
+						   Universitas sriwijaya
+						</div>
+						<div class="comp-pslider-title-t" style="font-weight: 400">
+								Jl. Raya Palembang-unsri KM 32 Inderalaya, Ogan Ilir, Sumatera Selatan, Indonesia
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-page">	
+			@Techphoria2019
+		</div>
+	</div>
+
+	
+	
+	<script src="ScrollMagic.min.js"></script>
+	<script src="animation.gsap.min.js"></script>
+	<script src="animation.velocity.min.js"></script>
+	<script src="debug.addIndicators.min.js"></script>
+	<script src="jquery.ScrollMagic.min.js"></script>
+	<script src="owl.carousel.min.js"></script>
+	<script>
+		/*var html = document.documentElement;
+		var body = document.body;
+
+		var scroller = {
+		  target: document.querySelector("#page-fixed"),
+		  ease: 0.08, // <= scroll speed
+		  endY: 0,
+		  y: 0,
+		  resizeRequest: 1,
+		  scrollRequest: 0,
+		};
+
+		var requestId = null;
+
+		TweenMax.set(scroller.target, {
+		  force3D: true
+		});
+
+		window.addEventListener("load", onLoad);
+
+		function onLoad() {    
+		  updateScroller();  
+		  window.focus();
+		  window.addEventListener("resize", onResize);
+		  document.addEventListener("scroll", onScroll); 
+		}
+
+		function updateScroller() {
+		  var resized = scroller.resizeRequest > 0;
+		    
+		  if (resized) {    
+		    var height = scroller.target.clientHeight;
+		    body.style.height = height + "px";
+		    scroller.resizeRequest = 0;
+		  }
+		      
+		  var scrollY = (window.pageYOffset || html.scrollTop || body.scrollTop || 0);
+
+		  scroller.endY = scrollY;
+		  scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+		  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+		    scroller.y = scrollY;
+		    scroller.scrollRequest = 0;
+		  }
+		  TweenMax.set(scroller.target, { 
+		    y: -scroller.y
+
+		  });
+		  
+		  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+		}
+
+		function onScroll() {
+		  scroller.scrollRequest++;
+		  if (!requestId) {
+		    requestId = requestAnimationFrame(updateScroller);
+		  }
+		}
+		function onResize() {
+		  scroller.resizeRequest++;
+		  if (!requestId) {
+		    requestId = requestAnimationFrame(updateScroller);
+		  }
+		}
+		*/
+
+		TweenMax.to("#homeanimbox",1,{
+				paddingBottom:0
+		}).delay(0.2);
+		TweenMax.to("#homeanim1",1.5,{
+				opacity:1,
+				y:0
+		});
+		TweenMax.to("#homeanim2",1.5,{
+				opacity:1,
+				y:0
+		}).delay(0.2);
+		TweenMax.to("#homeanim3",1.5,{
+				opacity:1,
+				y:0
+		}).delay(0.3);
+
+
+
+		/*Scroll Magic ANIMATION */
+
+		var controller = new ScrollMagic.Controller();
+
+		// anim BG2
+		var BG2 = new ScrollMagic.Scene({
+			triggerElement: "#bg2-trigger",
+			duration:0.5
+		}).setTween("#bg2-anim",1,{ zIndex:16}).addTo(controller);
+		var BG3 = new ScrollMagic.Scene({
+			triggerElement: "#bg3-trigger",
+			duration:0.5
+		}).setTween("#bg3-anim",1,{ zIndex:17}).addTo(controller);
+		var BG4 = new ScrollMagic.Scene({
+			triggerElement: "#bg4-trigger",
+			duration:0.5
+		}).setTween("#bg4-anim",1,{ zIndex:18}).addTo(controller);
+		var animdaftar = new ScrollMagic.Scene({
+			triggerElement: "#daftar-trigger"
+		}).setTween("#anim-daftar",0.8,{ opacity:1, y:0}).addTo(controller);
+
+		
+		/*var scene1 = new ScrollMagic.Scene({
+		  triggerElement: "#comp1",
+		})
+		.setTween("#comp1", 1, {backgroundSize: "-=40% -=40%",autoRound:true, ease:Power1.easeIn})
+		.addTo(controller);
+
+		var scene2 = new ScrollMagic.Scene({
+		  triggerElement: "#comp2",
+		})
+		.setTween("#comp2", 1, {backgroundSize: "-=40% -=40%",autoRound:true, ease:Power1.easeIn})
+		.addTo(controller);
+		var scene3 = new ScrollMagic.Scene({
+		  triggerElement: "#comp3",
+		})
+		.setTween("#comp3", 1, {backgroundSize: "-=40% -=40%",autoRound:true, ease:Power1.easeIn})
+		.addTo(controller);
+		*/
+		/*
+		var comp_content_slider = new ScrollMagic.Scene({
+			triggerElement: "#comp_cs_trigger",
+			duration:0.5
+		}).setTween("#pslider-title-anim",1,{
+			display:"block"
+		}).addTo(controller);
+
+		var comp_content_slider_end = new ScrollMagic.Scene({
+			triggerElement: "#comp_cs_trigger_end",
+			duration:0.5
+		}).setTween("#pslider-title-anim",1,{
+			display:"none"
+		}).addTo(controller);
+
+		
+
+		var comp_subcontent_slider = new ScrollMagic.Scene({
+			triggerElement: "#sub-content-trigger",
+			duration:0.5
+		}).setTween(sub_content_anim).addTo(controller);
+		var comp_subcontent_slider_end = new ScrollMagic.Scene({
+			triggerElement: "#sub-content-trigger-end",
+			duration:0.5
+		}).setTween("#sub-content-anim",1,{
+			display:"none"
+		}).addTo(controller);
+
+		 var scene7 = new ScrollMagic.Scene({
+			triggerElement: "#about-overlay"
+		})
+		.setTween("#home-about-fix",1,{zIndex:19})
+		.addTo(controller);
+		*/
+		/*OWL CAROUSEL */
+		 var scrollanimKUH= new ScrollMagic.Scene({
+			triggerElement: "#scroll-anim-trigger",
+			duration:1200
+		})
+		.setTween("#scroll-animku",1,{paddingTop:"550px"})
+		.addTo(controller);
+		
+		var owl = $('.owl-carousel');
+	      owl.owlCarousel({
+	      	loop:true,
+		    margin:50,
+		    nav:true,
+		    autoWidth:true,
+		    responsiveClass:true,
+	        responsive: {
+	          600: {
+	            items: 1
+	          },
+	          800: {
+	            items: 2
+	          },
+	          1000: {
+	            items: 3
+	          }
+	        }
+	      });
+
+	</script>
+</body>
+</html>

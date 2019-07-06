@@ -1,0 +1,43 @@
+.seminar-box-content2{
+	background-color: white;
+	height: 130vh;
+	width: 100vw;
+	color: white;
+}
+.seminar-content2{
+	width: 100vw;
+	height: auto: ;
+	background-color: black;
+	color: white;
+
+}
+.content2-box{	
+	padding-top: 150px;
+	font-weight: 200;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1;
+	padding-bottom: 100px;
+}
+.content2-text-box-title{
+	margin-top:90px;
+	margin-left: 20%;
+	font-size: 53px;
+	padding-bottom: 8px	;
+	
+}
+.content2-text-box-text{
+	font-size: 19px;
+	margin-left: 16%;
+	line-height: 2;
+
+}
+.seminar-img-slider{
+	margin-top: 100px;
+}
+.slider-img-big{
+	height: 400px;
+}
+.timeline-box{
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
